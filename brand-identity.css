@@ -1,0 +1,43 @@
+/* Identity styles sourced from the original Digital Haus landing page.
+   This stylesheet is loaded ONLY in shop.html; it has zero effect on index.html. */
+:root {
+  --ink:#29252c; --muted:#756b77; --plum:#986c9d; --plum-deep:#8c0d4d;
+  --rose:#f0dfee; --rose-light:#fcf6fb; --ivory:#ffffff; --cream:#fcf7fa;
+  --border:#e7d9e6; --white:#fff;
+  --sans:'Inter',sans-serif; --serif:'Playfair Display',Georgia,serif;
+  --display:'Playfair Display',Georgia,serif;
+}
+body{background:#fff;color:var(--ink);font-family:'Inter',sans-serif}
+.announcement{background:#8c0d4d}
+.header{background:rgba(255,255,255,.98)}
+.logo{font-family:'Playfair Display',serif;letter-spacing:-.045em;color:#8c0d4d}
+.logo em{color:#986c9d}
+.nav-links a,.btn,.eyebrow,.card-kicker,.chip,.card-tier,.catalog-meta,.product-label{font-family:'Poppins','Inter',sans-serif}
+.page-hero h1,.catalog-intro h2,.section-heading h2{font-family:'Poppins','Inter',sans-serif;letter-spacing:-.045em;font-weight:700}
+.page-hero h1{font-size:clamp(2.6rem,5vw,4.7rem);line-height:1.12}
+.catalog-intro h2{font-size:clamp(1.65rem,3vw,2.65rem);line-height:1.15}
+.product-info h1,.product-story h2,.policy-article h2,.editorial-panel h2{font-family:'Playfair Display',Georgia,serif;letter-spacing:-.03em}
+.card-body h3,.category-tile h3{font-family:'Playfair Display',Georgia,serif;font-weight:600}
+.card-body h3{font-size:clamp(1.3rem,2.2vw,1.7rem)}
+.product-info h1{font-size:clamp(2.25rem,3.8vw,3.8rem)}
+.design-card{border-color:#ebdce8;background:#fffafb}
+.product-buybox,.product-inclusions,.editorial-panel{border-color:var(--border)}
+.page-hero{background:#fff}
+.btn-primary{background:#8c0d4d;border-color:#8c0d4d}
+.btn-primary:hover{background:#986c9d;border-color:#986c9d}
+.card-price,.text-link{color:#8c0d4d}
+@media(max-width:600px){
+ .container{width:calc(100% - 36px)}
+ .catalog-grid{grid-template-columns:1fr;gap:18px}
+ .catalog-grid .design-card .media{aspect-ratio:1.33/1}
+ .catalog-grid .card-body h3{font-size:1.5rem}
+ .page-hero h1{font-size:clamp(2.4rem,10.8vw,3.45rem)}
+ .product-summary{font-size:1.15rem}
+ .section-heading h2{font-size:2.5rem}
+ .card-body p{font-size:.87rem}
+ .card-footer{gap:16px}
+}
+/* Exact decorative family used for the Digital wordmark in the builder source. */
+@font-face{font-family:'Parfumerie Script';src:url('https://atelier-dh.github.io/Web-Builder/atelier-content/fonts/ParfumerieScriptRegular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+.header .logo span{font-family:'Parfumerie Script','Playfair Display',serif;font-weight:400;font-size:1.12em;letter-spacing:0}
+.header .logo em{font-family:'Playfair Display',serif;letter-spacing:1px}
